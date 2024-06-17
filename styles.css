@@ -1,0 +1,97 @@
+* {
+    font-family: 'Sora';
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, #3494E6, #EC6EAD);
+    padding-top: 3rem;
+    height: 100vh;
+}
+
+.voiceinator {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-right: auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0.375rem 0.5rem 0 black;
+    border: 2.5px solid black;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+select, textarea {
+    padding: 0.75rem;
+    font-size: 15px;
+    border: 1.5px solid #9d9d9d;
+    border-radius: 0.375rem;
+    width: 100%;
+    outline: none;
+}
+
+select:focus {
+    border-color: #1677ff;
+}
+
+textarea:focus {
+    border-color: #1677ff;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 0.375rem;
+    position: relative;
+    width: 100%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 1rem;
+}
+
+.button-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#stop, #speak {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: ease 0.25s;
+}
+
+#speak:hover {
+    scale: 1.08;
+}
+
+#stop:hover {
+    scale: 1.08;
+}
+
+#speak {
+    background: #1677ff;
+}
+
+#stop {
+    background: #df0000;
+}
